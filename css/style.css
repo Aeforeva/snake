@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #303853;
+  font-family: "New Tegomin", "Wendy One", sans-serif;
+  font-size: 1em; /* scale */
+  color: white;
+  text-align: center;
+}
+
+/* div {
+  margin: 5px;
+}
+
+span {
+  border: silver dashed 1px;
+  margin: 1px;
+} */
+
+.start {
+  font-size: 1.3em;
+  margin: 0.5em;
+}
+
+#gameField {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#score {
+  font-size: 1.3em;
+  margin: 0.5em;
+}
+
+.snake {
+  background-color: forestgreen;
+  border-radius: 40%;
+}
+
+.head {
+  background-color: darkgreen;
+  border-radius: 25%;
+}
+
+.buff {
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+.wall {
+  background-color: silver;
+}

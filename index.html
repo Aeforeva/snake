@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Snake</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <div id="gameField">
+      <button
+        class="start"
+        onclick="clearInterval(slow), clearInterval(slowB), clearInterval(normal), clearInterval(normalB), clearInterval(fast), clearInterval(fastB)"
+      >
+        STOP
+      </button>
+      <button
+        class="start"
+        onclick="slow = setInterval(oneFrame, 300), slowB = setInterval(buff6s, 12000), clearInterval(normal), clearInterval(normalB), clearInterval(fast), clearInterval(fastB)"
+      >
+        Slow
+      </button>
+      <button
+        class="start"
+        onclick="normal = setInterval(oneFrame, 200), normalB = setInterval(buff6s, 10000), clearInterval(slow), clearInterval(slowB), clearInterval(fast), clearInterval(fastB)"
+      >
+        Normal
+      </button>
+      <button
+        class="start"
+        onclick="fast = setInterval(oneFrame, 100), fastB = setInterval(buff6s, 8000), clearInterval(slow), clearInterval(slowB), clearInterval(normal), clearInterval(normalB)"
+      >
+        Fast
+      </button>
+      <div style="margin-bottom: 0.5em">
+        control snake with ( w a s d ) or arrow keys
+      </div>
+      <main id="game"></main>
+      <div id="score">Score 0</div>
+      <div>
+        <ul>
+          известные баги:
+          <li>
+            змея может развернуться на 180 и убиться об себя если нажать 2
+            кнопки быстрее обновления одного фрейма.
+          </li>
+          <li>запуск новой игры на оповещении не доработан.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="js/dots.js"></script>
+<script src="js/snake.js"></script>
+<script src="js/respawn.js"></script>
+<script src="js/options.js"></script>
+<script src="js/keys.js"></script>
+<script src="js/app.js"></script>
