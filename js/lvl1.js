@@ -12,7 +12,17 @@ dots.forEach((dot) => {
 });
 
 // add some wall (lvl editor lol)
-// dots[148].cont = "wall";
+dots[148].cont = "wall";
+dots[149].cont = "wall";
+dots[150].cont = "wall";
+dots[151].cont = "wall";
+dots[152].cont = "wall";
+
+dots[63].cont = "wall";
+dots[64].cont = "wall";
+dots[65].cont = "wall";
+dots[66].cont = "wall";
+dots[67].cont = "wall";
 
 randomResp("buff");
 snake.overDots();

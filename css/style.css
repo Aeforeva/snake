@@ -20,6 +20,10 @@ span {
   margin: 1px;
 } */
 
+a {
+  text-decoration: none;
+}
+
 .start {
   font-size: 1.3em;
   margin: 0.5em;
@@ -27,7 +31,7 @@ span {
 
 #gameField {
   position: fixed; /* or absolute */
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -35,6 +39,10 @@ span {
 #score {
   font-size: 1.3em;
   margin: 0.5em;
+}
+
+#bugs {
+  color: slategray;
 }
 
 .snake {
